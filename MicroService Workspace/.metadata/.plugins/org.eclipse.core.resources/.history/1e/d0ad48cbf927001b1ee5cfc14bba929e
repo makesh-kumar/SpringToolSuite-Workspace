@@ -1,0 +1,12 @@
+package com.orchestrator.repository;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.orchestrator.model.OracleData;
+
+public interface OracleDataRepo extends MongoRepository<OracleData, String>
+{
+	List<OracleData> findByTicNo(String ticNo);
+}

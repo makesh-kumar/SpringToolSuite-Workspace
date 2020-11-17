@@ -1,0 +1,7 @@
+
+
+ spring.main.web-application-type=none
+ spring.devtools.restart.enabled=true
+ 
+ 
+ spring.autoconfigure.exclude=

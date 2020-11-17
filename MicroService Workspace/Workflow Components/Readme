@@ -1,0 +1,20 @@
+
+/**
+ * @author Makesh Kumar
+ *
+ */
+
+base url:
+_______________________________________________________________________________
+
+Model
+
+SimpleMail(string to, string sub, string body)
+ComplexMail(string to, string sub, string body, string approveApi, string rejectApi)
+________________________________________________________________________________
+
+END POINTS
+
+baseUrl/sendSimpleMail (Body - simpleMail)
+baseUrl/sendComplexMail (Body - complexMail)
+________________________________________________________________________________

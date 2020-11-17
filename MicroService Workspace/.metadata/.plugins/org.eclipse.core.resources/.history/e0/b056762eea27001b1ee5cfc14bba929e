@@ -1,0 +1,23 @@
+package com.orchestrator;
+
+import org.apache.catalina.core.ApplicationContext;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
+/**
+ * @author Makesh Kumar
+ *
+ */
+@SpringBootApplication
+public class OrchestratorApplication {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext c = SpringApplication.run(OrchestratorApplication.class, args);
+	}
+	 @Bean
+	   public RestTemplate getRestTemplate() {
+	      return new RestTemplate();
+	   }
+}
